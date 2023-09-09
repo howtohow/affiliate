@@ -1,0 +1,86 @@
+body{   
+    font-family: 'Poppins', sans-serif;
+    background-color: #fef6f5;
+}
+
+.grid-item{
+    width:250px;
+/*    border:2px solid black;*/
+    
+}
+
+.grid-item img{
+        width:100%;
+    border:1px solid #d6d6d6;
+    border-radius:3px;
+    transition:.2s all;
+    }
+
+.grid{
+    margin:0 auto;
+/*    border:1px solid red;*/
+}
+
+nav{ 
+    margin:0 auto;
+    width:100%;
+    height:50px;
+/*    border:2px solid black;*/
+    position:sticky; 
+    top:0;
+    z-index: 10;
+/*    background-color: #fae0df;*/
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.headerLinks{
+    margin:auto;
+    width:50%;
+/*    border:2px solid black;*/
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+}
+a{
+    text-decoration:none;
+    color:darkslategrey;
+    
+}
+
+.hide{
+   display:none; 
+}
+
+.grid-item:hover img {
+
+transform:scale(1.01);
+/*  filter:blur(1.1px);*/
+  opacity:0.8;
+  box-shadow:0 2px 5px 0px rgba(0,0,0,0.125);
+/*    transition: 1s all;*/
+}
+
+a:hover{
+    color:black;
+}
+
+a{
+    border: none;
+    padding:5px;
+    font-family: Poppins;
+    height:100%;    
+    cursor: pointer;
+    border-radius:3px;
+/*    background-color: yellow;*/
+    background: none;
+}
+.changeButtonColor{
+    background-color: #faccc7;
+    color:black;
+}
+.changeColor{
+    background-color: #fce1de;
+    transition:0.4s ease;
+}

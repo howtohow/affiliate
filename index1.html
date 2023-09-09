@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Infinite Scrolling</title>
+ <style type="text/css">
+  body {
+   margin: 0;
+   padding: 0;
+   font-family: Arial, sans-serif;
+  }
+  .container {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   margin-top: 20px;
+  }
+  .box {
+   width: 300px;
+   height: 300px;
+   margin: 10px;
+   background-color: #f2f2f2;
+   border-radius: 5px;
+   box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   font-size: 50px;
+  }
+ </style>
+</head>
+<body>
+ <div class="container">
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+  <div class="box">4</div>
+  <div class="box">5</div>
+ </div>
+
+<script type="text/javascript">
+ var container = document.querySelector('.container');
+ var boxes = document.querySelectorAll('.box');
+ var lastBox = boxes[boxes.length - 1];
+ var ticking = false;
+
+ function doSomething() {
+   var newBox = document.createElement('div');
+   newBox.classList.add('box');
+   newBox.innerHTML = boxes.length + 1;
+
+   container.appendChild(newBox);
+   boxes = document.querySelectorAll('.box');
+   lastBox = boxes[boxes.length - 1];
+   ticking = false;
+ }
+
+ window.addEventListener('scroll', () => {
+  const { scrollTop, scrollHeight, clientHeight } = document.documentElement;
+
+  if (scrollTop + clientHeight >= scrollHeight - 5) {
+    const newBox = document.createElement('div');
+    newBox.textContent = 'New div';
+    newBox.classList.add('box');
+    newBox.innerHTML = boxes.length + 1;
+    document.body.appendChild(newBox);
+    boxes = document.querySelectorAll('.box');
+   lastBox = boxes[boxes.length - 1];
+  }
+});
+</script>
+
+</body>
+</html>

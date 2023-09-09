@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML 5 Boilerplate</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+        <nav id="navigation">
+            <div class="headerLinks">
+  
+                <a id="all" onclick="AllTiles('all')">ALL OFFERS</a>
+                <a id="one" onclick="changeTiles('one')"><span>ONE</span></a>
+                <a id="two" onclick="changeTiles('two')">TWO</a>
+                <a id="three" onclick="changeTiles('three')">THREE</a>
+                <a id="four" onclick="changeTiles('four')">FOUR</a>
+                <a id="five" onclick="changeTiles('five')">FIVE</a>
+<!--
+                    <a href="#" onclick="AllTiles()">ALL OFFERS</a>
+                    <a href="#" onclick="changeTiles('one')">ONE</a>
+                    <a href="#" onclick="changeTiles('two')">TWO</a>
+                    <a href="#" onclick="changeTiles('three')">THREE</a>
+                    <a href="#" onclick="changeTiles('four')">FOUR</a>
+                    <a href="#" onclick="changeTiles('five')">FIVE</a>
+-->
+<!--
+                    <button onclick="changeTiles('one')">ONE</button>
+                    <button onclick="changeTiles('two')">TWO</button>
+                    <button onclick="changeTiles('three')">THREE</button>
+                    <button onclick="changeTiles('four')">FOUR</button>
+                    <button onclick="changeTiles('five')">FIVE</button>
+-->
+
+            </div>  
+        </nav>
+      <div class="images" id="images">
+      <div class="grid" id="grid">
+          <div class="grid-item one"><img src="https://random.imagecdn.app/280/840"></div>
+          <div class="grid-item one"><img src="https://random.imagecdn.app/535/280"></div>
+          <div class="grid-item one"><img src="https://random.imagecdn.app/356/311"></div>
+          <div class="grid-item one"><img src="https://random.imagecdn.app/426/390"></div>
+          <div class="grid-item one"><img src="https://random.imagecdn.app/439/757"></div>
+          <div class="grid-item two"><img src="https://random.imagecdn.app/122/169"></div>
+          <div class="grid-item two"><img src="https://random.imagecdn.app/954/539"></div>
+          <div class="grid-item two"><img src="https://random.imagecdn.app/433/155"></div>
+          <div class="grid-item two"><img src="https://random.imagecdn.app/385/762"></div>
+          <div class="grid-item two"><img src="https://random.imagecdn.app/809/289"></div>
+          <div class="grid-item three"><img src="https://random.imagecdn.app/606/415"></div>
+          <div class="grid-item three"><img src="https://random.imagecdn.app/590/588"></div>
+          <div class="grid-item three"><img src="https://random.imagecdn.app/77/618"></div>
+          <div class="grid-item three"><img src="https://random.imagecdn.app/658/942"></div>
+          <div class="grid-item three"><img src="https://random.imagecdn.app/853/418"></div>
+          <div class="grid-item four"><img src="https://random.imagecdn.app/583/463"></div>
+          <div class="grid-item four"><img src="https://random.imagecdn.app/84/798"></div>
+          <div class="grid-item four"><img src="https://random.imagecdn.app/496/384"></div>
+          <div class="grid-item four"><img src="https://random.imagecdn.app/65/805"></div>
+          <div class="grid-item four"><img src="https://random.imagecdn.app/468/154"></div>
+          <div class="grid-item five"><img src="https://random.imagecdn.app/259/810"></div>
+          <div class="grid-item five"><img src="https://random.imagecdn.app/463/266"></div>
+          <div class="grid-item five"><img src="https://random.imagecdn.app/828/749"></div>
+          <div class="grid-item five"><img src="https://random.imagecdn.app/506/590"></div>
+          <div class="grid-item five"><img src="https://random.imagecdn.app/967/192"></div>
+<!--
+          <div class="grid-item one"><img src="Images/one (1).png"></div>
+          <div class="grid-item one"><img src="Images/one (2).png"></div>
+          <div class="grid-item one"><img src="Images/one (3).png"></div>
+          <div class="grid-item one"><img src="Images/one (4).png"></div>
+          <div class="grid-item one"><img src="Images/one (5).png"></div>
+          <div class="grid-item two"><img src="Images/two (1).png"></div>
+          <div class="grid-item two"><img src="Images/two (2).png"></div>
+          <div class="grid-item two"><img src="Images/two (3).png"></div>
+          <div class="grid-item two"><img src="Images/two (4).png"></div>
+          <div class="grid-item two"><img src="Images/two (5).png"></div>
+          <div class="grid-item three"><img src="Images/three (1).png"></div>
+          <div class="grid-item three"><img src="Images/three (2).png"></div>
+          <div class="grid-item three"><img src="Images/three (3).png"></div>
+          <div class="grid-item three"><img src="Images/three (4).png"></div>
+          <div class="grid-item three"><img src="Images/three (5).png"></div>
+          <div class="grid-item four"><img src="Images/four (1).png"></div>
+          <div class="grid-item four"><img src="Images/four (2).png"></div>
+          <div class="grid-item four"><img src="Images/four (3).png"></div>
+          <div class="grid-item four"><img src="Images/four (4).png"></div>
+          <div class="grid-item four"><img src="Images/four (5).png"></div>
+          <div class="grid-item five"><img src="Images/five (1).png"></div>
+          <div class="grid-item five"><img src="Images/five (2).png"></div>
+          <div class="grid-item five"><img src="Images/five (3).png"></div>
+          <div class="grid-item five"><img src="Images/five (4).png"></div>
+          <div class="grid-item five"><img src="Images/five (5).png"></div>
+-->
+
+      </div>
+      </div>
+      <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+        <script src="masonryapp.js"></script>
+    </body>
+</html>
