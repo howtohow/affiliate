@@ -1,6 +1,7 @@
 body{   
     font-family: 'Poppins', sans-serif;
-    background-color: #fef6f5;
+    background-image: url("Images/leaves.png");
+    /* background-color: #fef6f5; */
 }
 
 .grid-item{
@@ -46,7 +47,7 @@ nav{
 a{
     text-decoration:none;
     color:darkslategrey;
-    
+    text-align: center;
 }
 
 .hide{
