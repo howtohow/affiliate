@@ -84,3 +84,9 @@ a{
     background-color: #fce1de;
     transition:0.4s ease;
 }
+
+@media screen and (max-width: 600px) {
+    div.grid-item {
+      width: 175px;
+    }
+}
