@@ -80,6 +80,7 @@ a{
 .changeButtonColor{
     background-color: #faccc7;
     color:black;
+    transition:0.4s ease;
 }
 .changeColor{
     background-color: #fce1de;
@@ -89,5 +90,9 @@ a{
 @media screen and (max-width: 600px) {
     div.grid-item {
       width: 175px;
+    }
+    div.headerLinks{
+        width:80%;
+        font-size: small;
     }
 }
