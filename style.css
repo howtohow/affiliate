@@ -91,6 +91,96 @@ a{
     transition:0.4s ease;
 }
 
+/* NEW DIVS */
+.mainDiv {
+    border-radius: 3px;
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgDiv {
+    line-height: 0%;
+    /* width: 100%; */
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow: hidden;
+}
+
+.descDiv {
+    height: 150px;
+    width: 100%;;
+    background: #ffffff;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom:1px solid #d6d6d6;
+    border-right:1px solid #d6d6d6;
+    border-left:1px solid #d6d6d6;
+    /* border:2px solid green; */
+}
+
+.productName {
+    height: 13%;
+    width: 95%;
+    font-size: small;
+    /* border:2px solid yellow; */
+}
+
+.priceStars {
+    /* border-top: 1px solid #cacaca; */
+    height: 12%;
+    /* padding-top: 1px;
+    padding-bottom: 1px; */
+    width: 95%;
+    /* font-size: small; */
+    font-size: 11px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    /* font-weight:normal; */
+    /* border:2px solid pink; */
+}
+
+.price{
+/* border:1px solid green; */
+/* align-self: center; */
+/* font-weight: bold; */
+}
+
+.stars{
+/* border:1px solid red; */
+/* align-items: center; */
+/* font-weight: bold; */
+}
+
+.productDescription {
+    /* border:2px solid blue; */
+    padding-top: 2px;
+    height: 70%;
+    border-top: 1px solid #cacaca;
+    font-size: small;
+    width: 95%;
+    margin-bottom:2.5%;
+    color:gray;
+    display: inline;
+    -webkit-line-clamp: 5;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
+}
+/* NEW DIVS */
+
 @media screen and (max-width: 600px) {
     div.grid-item {
       width: 175px;
