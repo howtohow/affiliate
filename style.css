@@ -104,7 +104,7 @@ a{
 
 .imgDiv {
     line-height: 0%;
-    /* width: 100%; */
+    width: 100%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
     overflow: hidden;
