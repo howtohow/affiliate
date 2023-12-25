@@ -1,0 +1,95 @@
+[33mcommit 21f2cc2fd35535ab48ea9d8852fcca09413d2046[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Mon Dec 25 17:55:23 2023 +0530
+
+    v2.0 trying to fix screen size fitting-1
+
+[33mcommit 53fe19825b11c4967e22816e19ccb73f8b5a6c8e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Mon Dec 25 17:45:20 2023 +0530
+
+    v2.0 added logo to Images folder
+
+[33mcommit 03f0a2282188434f6c8be51182409f4d7bb1948f[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Mon Dec 25 17:34:30 2023 +0530
+
+    v2.0
+
+[33mcommit 22cc2a719f8f4fda141d60950b58e0c6a9066e5d[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sat Oct 14 16:24:57 2023 +0530
+
+    git commit button names, removed span on second button, fixed productdescription class & reduced description text added
+
+[33mcommit 2d8c7452d01526126a8d365f379e4c3b33f9762a[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sun Oct 8 20:10:45 2023 +0530
+
+    git commit grid-item-margin-bottom added again grid-item-width added
+
+[33mcommit 7b2f16ff33b023080703b614d1593c5e508acb0d[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sun Oct 8 19:59:53 2023 +0530
+
+    git commit grid-item-margin-bottom added, grid-item-opacity-commented & productName,price and stars added
+
+[33mcommit 3afdfca1d95dd62a699c4f516049d0cbc6611df6[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sun Oct 8 19:41:43 2023 +0530
+
+    git commit new product divs
+
+[33mcommit 48ed623c58517897540d46eb1406cd317f330c2c[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sun Oct 8 18:53:01 2023 +0530
+
+    git commit transparent button click on mobile
+
+[33mcommit 04d894abb06d7468cc0ae49feed3826a30853984[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sun Oct 8 18:22:02 2023 +0530
+
+    git commit media-query for navbar size on mobile try-1
+
+[33mcommit 57ed3c6d94d79021d5331ddfc5766a62bffdad7a[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sun Sep 10 19:37:28 2023 +0530
+
+    git commit background image and text align for nav links on mobile added image to foldes
+
+[33mcommit 36310efd81e104a84d756774856e0e029d5222c3[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sun Sep 10 19:33:15 2023 +0530
+
+    git commit background image and text align for nav links on mobile
+
+[33mcommit f4bb785909c7de4df474c0005a1adaf6214f3afd[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sun Sep 10 17:11:34 2023 +0530
+
+    git commit media-query for more columns on mobile try-1
+
+[33mcommit 1083707279e1d868f3647b99fc9d8ecb41a63d89[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sat Sep 9 12:42:27 2023 +0530
+
+    increased nav height to 80px
+
+[33mcommit 2eadc1d364b94baae46788ab0ad10defe74899db[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sat Sep 9 12:32:00 2023 +0530
+
+    git commit index New_Clone
+
+[33mcommit 7a688624d8280529a1f55709e53fc648f11fbfda[m
+Author: howtohow <howtohow555@gmail.com>
+Date:   Sat Sep 9 12:07:01 2023 +0530
+
+    git commit from New_Clone
+
+[33mcommit c277404a3a84525acfd30fb1fcd796dcb4d3366d[m
+Author: howtohow <67639973+howtohow@users.noreply.github.com>
+Date:   Sat Sep 9 11:30:27 2023 +0530
+
+    Initial commit
