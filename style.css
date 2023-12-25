@@ -315,8 +315,8 @@ a{
 
 @media screen and (max-width: 600px) {
     div.grid-item {
-      width: 220px;
-      /* width:175px; */
+      /* width: 220px; */
+      width:175px;
     }
     div.headerLinks{
         width:80%;
