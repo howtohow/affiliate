@@ -20,7 +20,8 @@
 //    masonry.remove('.one');
 //}
 var navigation = document.getElementById("navigation");
-//var maingrid = document.getElementById("grid");
+// var maingrid = document.getElementById("grid");
+var adarshgrid=document.getElementById("grid");
 let masonry;
 let grid;
 let arr=[]
@@ -29,25 +30,31 @@ const imgClasses = new Set();
 const arrn = new Set();
 let masonryItems;
 let arrForTiles=new Set();
+var CSSVariables = document.querySelector(':root');
+var gutterSize=10;
 
 window.onload=function(){
+    if(window.innerWidth<=600){
+        gutterSize=0;
+    }
+    console.log("inside onload")
         grid=document.querySelector(".grid");
         masonry=new Masonry(grid,{
           itemSelector:'.grid-item',
-          gutter:10,
+          gutter:gutterSize,
           fitWidth: true,
           horizontalOrder: false,
 });  
  changeButtonColor("all");
+
 }
 window.addEventListener("scroll",function(e){
 if(window.pageYOffset>0){
     navigation.classList.add("changeColor");
 }else{
     navigation.classList.remove("changeColor");
-}
+}   
 })
-
 function changeTiles(n){
 
 masonry.destroy()
@@ -55,10 +62,9 @@ masonry.destroy()
 for(let i=0;i<  document.getElementsByClassName("grid-item").length;i++){
         document.getElementsByClassName("grid-item")[i].classList.remove("hide")
 }
-    console.log()
     masonry=new Masonry(grid,{
           itemSelector:'.'+n,
-          gutter:10,
+          gutter:gutterSize,
           fitWidth: true,
           horizontalOrder: false,
     });
@@ -83,7 +89,7 @@ for(let i=0;i<  document.getElementsByClassName("grid-item").length;i++){
         grid=document.querySelector(".grid");
         masonry=new Masonry(grid,{
           itemSelector:'.grid-item',
-          gutter:10,
+          gutter:gutterSize,
           fitWidth: true,
           horizontalOrder: false,
         });
@@ -101,6 +107,290 @@ for(let i=0;i<document.getElementsByTagName("a").length;i++){
     }
 }
 }
+
+// TRYING TO ADD NEW DIVS DYNAMICALLY
+for(var i=0;i<Electronics_data.search_results.length;i++){
+var div=document.createElement("div");
+var maindiv=document.createElement("div");
+var imgdiv=document.createElement("div");
+var mainlink=document.createElement("a");
+var img=document.createElement("img");
+var descdiv=document.createElement("div");
+var productNamenew=document.createElement("div");
+var starsnew=document.createElement("div");
+var new1=document.createElement("div");
+var new1=document.createElement("div");
+var new2=document.createElement("div");
+var productDescriptionnew=document.createElement("div");
+
+div.appendChild(maindiv);
+maindiv.appendChild(imgdiv);
+imgdiv.appendChild(mainlink);
+mainlink.appendChild(img);
+img.src=Electronics_data.search_results[i].image;
+mainlink.href=Electronics_data.search_results[i].link;
+mainlink.target="_blank";
+console.log(img.src)
+maindiv.appendChild(descdiv);
+descdiv.appendChild(productNamenew);
+// productNamenew.textContent="Headphones";
+descdiv.appendChild(starsnew);
+starsnew.appendChild(new1);
+new1.textContent=Electronics_data.search_results[i].price.raw;
+new2.textContent="\u2605"+" "+Electronics_data.search_results[i].rating;
+starsnew.appendChild(new2);
+descdiv.appendChild(productDescriptionnew);
+productDescriptionnew.textContent=Electronics_data.search_results[i].title;
+
+div.setAttribute("class","grid-item");
+div.classList.add("one");
+maindiv.setAttribute("class","maindiv");
+imgdiv.setAttribute("class","imgdiv");
+mainlink.setAttribute("class","mainlink");
+descdiv.setAttribute("class","descdiv");
+productNamenew.setAttribute("class","productNamenew");
+starsnew.setAttribute("class","starsnew");
+new1.setAttribute("class","new1");
+new2.setAttribute("class","new2");
+productDescriptionnew.setAttribute("class","productDescriptionnew");
+if(window.innerWidth<=600){
+    div.style.marginBottom=0;
+}
+
+adarshgrid.appendChild(div);
+}
+
+for(var i=0;i<Kitchen_data.search_results.length;i++){
+var div=document.createElement("div");
+var maindiv=document.createElement("div");
+var imgdiv=document.createElement("div");
+var mainlink=document.createElement("a");
+var img=document.createElement("img");
+var descdiv=document.createElement("div");
+var productNamenew=document.createElement("div");
+var starsnew=document.createElement("div");
+var new1=document.createElement("div");
+var new1=document.createElement("div");
+var new2=document.createElement("div");
+var productDescriptionnew=document.createElement("div");
+
+div.appendChild(maindiv);
+maindiv.appendChild(imgdiv);
+imgdiv.appendChild(mainlink);
+mainlink.appendChild(img);
+img.src=Kitchen_data.search_results[i].image;
+mainlink.href=Kitchen_data.search_results[i].link;
+mainlink.target="_blank";
+console.log(img.src)
+maindiv.appendChild(descdiv);
+descdiv.appendChild(productNamenew);
+// productNamenew.textContent="Headphones";
+descdiv.appendChild(starsnew);
+starsnew.appendChild(new1);
+new1.textContent=Kitchen_data.search_results[i].price.raw;
+new2.textContent="\u2605"+" "+Kitchen_data.search_results[i].rating;
+starsnew.appendChild(new2);
+descdiv.appendChild(productDescriptionnew);
+productDescriptionnew.textContent=Kitchen_data.search_results[i].title;
+
+div.setAttribute("class","grid-item");
+div.classList.add("three");
+maindiv.setAttribute("class","maindiv");
+imgdiv.setAttribute("class","imgdiv");
+mainlink.setAttribute("class","mainlink");
+descdiv.setAttribute("class","descdiv");
+productNamenew.setAttribute("class","productNamenew");
+starsnew.setAttribute("class","starsnew");
+new1.setAttribute("class","new1");
+new2.setAttribute("class","new2");
+productDescriptionnew.setAttribute("class","productDescriptionnew");
+if(window.innerWidth<=600){
+    div.style.marginBottom=0;
+}
+
+adarshgrid.appendChild(div);
+}
+
+for(var i=0;i<Men_data.search_results.length;i++){
+var div=document.createElement("div");
+var maindiv=document.createElement("div");
+var imgdiv=document.createElement("div");
+var mainlink=document.createElement("a");
+var img=document.createElement("img");
+var descdiv=document.createElement("div");
+var productNamenew=document.createElement("div");
+var starsnew=document.createElement("div");
+var new1=document.createElement("div");
+var new1=document.createElement("div");
+var new2=document.createElement("div");
+var productDescriptionnew=document.createElement("div");
+
+div.appendChild(maindiv);
+maindiv.appendChild(imgdiv);
+imgdiv.appendChild(mainlink);
+mainlink.appendChild(img);
+img.src=Men_data.search_results[i].image;
+mainlink.href=Men_data.search_results[i].link;
+mainlink.target="_blank";
+console.log(img.src)
+maindiv.appendChild(descdiv);
+descdiv.appendChild(productNamenew);
+// productNamenew.textContent="Headphones";
+descdiv.appendChild(starsnew);
+starsnew.appendChild(new1);
+new1.textContent=Men_data.search_results[i].price.raw;
+new2.textContent="\u2605"+" "+Men_data.search_results[i].rating;
+starsnew.appendChild(new2);
+descdiv.appendChild(productDescriptionnew);
+productDescriptionnew.textContent=Men_data.search_results[i].title;
+
+div.setAttribute("class","grid-item");
+div.classList.add("two");
+maindiv.setAttribute("class","maindiv");
+imgdiv.setAttribute("class","imgdiv");
+mainlink.setAttribute("class","mainlink");
+descdiv.setAttribute("class","descdiv");
+productNamenew.setAttribute("class","productNamenew");
+starsnew.setAttribute("class","starsnew");
+new1.setAttribute("class","new1");
+new2.setAttribute("class","new2");
+productDescriptionnew.setAttribute("class","productDescriptionnew");
+if(window.innerWidth<=600){
+    div.style.marginBottom=0;
+}
+
+adarshgrid.appendChild(div);
+}
+
+for(var i=0;i<Games_data.search_results.length;i++){
+var div=document.createElement("div");
+var maindiv=document.createElement("div");
+var imgdiv=document.createElement("div");
+var mainlink=document.createElement("a");
+var img=document.createElement("img");
+var descdiv=document.createElement("div");
+var productNamenew=document.createElement("div");
+var starsnew=document.createElement("div");
+var new1=document.createElement("div");
+var new1=document.createElement("div");
+var new2=document.createElement("div");
+var productDescriptionnew=document.createElement("div");
+
+div.appendChild(maindiv);
+maindiv.appendChild(imgdiv);
+imgdiv.appendChild(mainlink);
+mainlink.appendChild(img);
+img.src=Games_data.search_results[i].image;
+mainlink.href=Games_data.search_results[i].link;
+mainlink.target="_blank";
+console.log(img.src)
+maindiv.appendChild(descdiv);
+descdiv.appendChild(productNamenew);
+// productNamenew.textContent="Headphones";
+descdiv.appendChild(starsnew);
+starsnew.appendChild(new1);
+new1.textContent=Games_data.search_results[i].price.raw;
+new2.textContent="\u2605"+" "+Games_data.search_results[i].rating;
+starsnew.appendChild(new2);
+descdiv.appendChild(productDescriptionnew);
+productDescriptionnew.textContent=Games_data.search_results[i].title;
+
+div.setAttribute("class","grid-item");
+div.classList.add("four");
+maindiv.setAttribute("class","maindiv");
+imgdiv.setAttribute("class","imgdiv");
+mainlink.setAttribute("class","mainlink");
+descdiv.setAttribute("class","descdiv");
+productNamenew.setAttribute("class","productNamenew");
+starsnew.setAttribute("class","starsnew");
+new1.setAttribute("class","new1");
+new2.setAttribute("class","new2");
+productDescriptionnew.setAttribute("class","productDescriptionnew");
+if(window.innerWidth<=600){
+    div.style.marginBottom=0;
+}
+
+adarshgrid.appendChild(div);
+}
+
+for(var i=0;i<Women_data.search_results.length;i++){
+var div=document.createElement("div");
+var maindiv=document.createElement("div");
+var imgdiv=document.createElement("div");
+var mainlink=document.createElement("a");
+var img=document.createElement("img");
+var descdiv=document.createElement("div");
+var productNamenew=document.createElement("div");
+var starsnew=document.createElement("div");
+var new1=document.createElement("div");
+var new1=document.createElement("div");
+var new2=document.createElement("div");
+var productDescriptionnew=document.createElement("div");
+
+div.appendChild(maindiv);
+maindiv.appendChild(imgdiv);
+imgdiv.appendChild(mainlink);
+mainlink.appendChild(img);
+img.src=Women_data.search_results[i].image;
+mainlink.href=Women_data.search_results[i].link;
+mainlink.target="_blank";
+// console.log(img.src)
+maindiv.appendChild(descdiv);
+descdiv.appendChild(productNamenew);
+// productNamenew.textContent="Headphones";
+descdiv.appendChild(starsnew);
+starsnew.appendChild(new1);
+new1.textContent=Women_data.search_results[i].price.raw;
+new2.textContent="\u2605"+" "+Women_data.search_results[i].rating;
+starsnew.appendChild(new2);
+descdiv.appendChild(productDescriptionnew);
+productDescriptionnew.textContent=Women_data.search_results[i].title;
+
+div.setAttribute("class","grid-item");
+div.classList.add("five");
+maindiv.setAttribute("class","maindiv");
+imgdiv.setAttribute("class","imgdiv");
+mainlink.setAttribute("class","mainlink");
+descdiv.setAttribute("class","descdiv");
+productNamenew.setAttribute("class","productNamenew");
+starsnew.setAttribute("class","starsnew");
+new1.setAttribute("class","new1");
+new2.setAttribute("class","new2");
+productDescriptionnew.setAttribute("class","productDescriptionnew");
+if(window.innerWidth<=600){
+    div.style.marginBottom=0;
+}
+
+adarshgrid.appendChild(div);
+}
+
+// TRYING TO ADD NEW DIVS DYNAMICALLY
+
+//IMAGES FOR PRODUCTS
+Electronics_asins=[];
+Kitchen_asins=[];
+Men_asins=[];
+Games_asins=[];
+Women_asins=[];
+
+for(var i=0;i<Electronics_data.search_results.length;i++){
+    Electronics_asins.push(Electronics_data.search_results[i].asin)
+}
+for(var i=0;i<Kitchen_data.search_results.length;i++){
+    Kitchen_asins.push(Kitchen_data.search_results[i].asin)
+}
+for(var i=0;i<Men_data.search_results.length;i++){
+    Men_asins.push(Men_data.search_results[i].asin)
+}
+for(var i=0;i<Games_data.search_results.length;i++){
+    Games_asins.push(Games_data.search_results[i].asin)
+}
+for(var i=0;i<Women_data.search_results.length;i++){
+    Women_asins.push(Women_data.search_results[i].asin)
+}
+
+console.log(Electronics_asins,Kitchen_asins,Games_asins,Women_asins)
+//IMAGES FOR PRODUCTS
 
 /////////////WORKING REMOVING/////////////////////
 //function changeTiles(n){
